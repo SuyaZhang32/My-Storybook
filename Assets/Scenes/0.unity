@@ -471,7 +471,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.5764706, g: 0.62352943, b: 0.7529412, a: 1}
-    m_HighlightedColor: {r: 0.29178533, g: 0.7830189, b: 0.5487786, a: 1}
+    m_HighlightedColor: {r: 0.6862745, g: 0.3372549, b: 1, a: 1}
     m_PressedColor: {r: 0.9339623, g: 0.84826934, b: 0.49781948, a: 1}
     m_SelectedColor: {r: 0.34834465, g: 0.5120174, b: 0.7169812, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -719,6 +719,8 @@ GameObject:
   - component: {fileID: 640833930}
   - component: {fileID: 640833929}
   - component: {fileID: 640833928}
+  - component: {fileID: 640833933}
+  - component: {fileID: 640833932}
   m_Layer: 0
   m_Name: Moon
   m_TagString: Untagged
@@ -805,6 +807,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -4.506, y: 0.755, z: 0.158}
+--- !u!95 &640833932
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640833927}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!320 &640833933
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640833927}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 857cffe0ea1dc4fdd8cefebc3e39be00, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -3736130008868311028, guid: 857cffe0ea1dc4fdd8cefebc3e39be00, type: 2}
+    value: {fileID: 640833932}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &647214354
 GameObject:
   m_ObjectHideFlags: 0
@@ -1479,6 +1520,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1227588031}
+  - component: {fileID: 1227588033}
+  - component: {fileID: 1227588032}
   m_Layer: 0
   m_Name: spaceman
   m_TagString: Untagged
@@ -1493,7 +1536,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227588030}
-  m_LocalRotation: {x: -0, y: -0, z: -0.16279788, w: 0.98665947}
+  m_LocalRotation: {x: -0, y: 0, z: -0.1627979, w: 0.98665947}
   m_LocalPosition: {x: 7.9375, y: 0.12493, z: -3.0187}
   m_LocalScale: {x: 0.014452043, y: 0.014452043, z: 0.014452043}
   m_ConstrainProportionsScale: 0
@@ -1507,6 +1550,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -18.739}
+--- !u!95 &1227588032
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227588030}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!320 &1227588033
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227588030}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: a0f806d8df80a4eecb672c7f231f5b23, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 590396865803350, guid: a0f806d8df80a4eecb672c7f231f5b23, type: 2}
+    value: {fileID: 1227588032}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1255741651
 GameObject:
   m_ObjectHideFlags: 0
